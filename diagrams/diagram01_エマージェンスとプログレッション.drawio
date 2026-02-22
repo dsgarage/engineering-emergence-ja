@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram name="エマージェンスとプログレッション" id="diagram01">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- タイトル -->
+        <mxCell id="title" value="&lt;b&gt;ゲームの2大構造: エマージェンス vs プログレッション&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="280" y="20" width="640" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- 左側グループ: エマージェンス -->
+        <mxCell id="emergence_group" value="&lt;b&gt;エマージェンス（創発）&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;verticalAlign=top;spacingTop=5;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="380" height="420" as="geometry"/>
+        </mxCell>
+
+        <!-- エマージェンスの核心 -->
+        <mxCell id="em_core" value="&lt;b&gt;少数のルール&lt;/b&gt;&lt;br&gt;↓&lt;br&gt;&lt;b&gt;複雑な振る舞い&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b6d7f2;strokeColor=#6c8ebf;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="120" width="260" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- エマージェンスの特徴 -->
+        <mxCell id="em_feat1" value="予測不能な展開" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="70" y="220" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="em_feat2" value="リプレイ性が高い" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="240" y="220" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="em_feat3" value="プレイヤーの戦略が多様" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="130" y="270" width="200" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- エマージェンスの例 -->
+        <mxCell id="em_ex_label" value="&lt;b&gt;代表例&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="170" y="330" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="em_ex1" value="♟ チェス" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0fa;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="360" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="em_ex2" value="🏙 SimCity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0fa;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="175" y="360" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="em_ex3" value="⚔ StarCraft" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0fa;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="290" y="360" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="em_icon" value="シンプルなルール&#xa;→ 無限の可能性" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=15;fillColor=#b6d7f2;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="410" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 右側グループ: プログレッション -->
+        <mxCell id="progression_group" value="&lt;b&gt;プログレッション（進行）&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;verticalAlign=top;spacingTop=5;align=center;" vertex="1" parent="1">
+          <mxGeometry x="780" y="80" width="380" height="420" as="geometry"/>
+        </mxCell>
+
+        <!-- プログレッションの核心 -->
+        <mxCell id="pr_core" value="&lt;b&gt;デザイナーが設計した&lt;/b&gt;&lt;br&gt;&lt;b&gt;課題の連鎖&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b8dab0;strokeColor=#82b366;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="120" width="260" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- プログレッションの特徴 -->
+        <mxCell id="pr_feat1" value="制御しやすい" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="810" y="220" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="pr_feat2" value="ストーリー重視" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="980" y="220" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="pr_feat3" value="体験の品質を保証" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="870" y="270" width="200" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- プログレッションの例 -->
+        <mxCell id="pr_ex_label" value="&lt;b&gt;代表例&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="910" y="330" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="pr_ex1" value="📖 アドベンチャー" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e2;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="820" y="360" width="130" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="pr_ex2" value="🗡 ゼルダの伝説" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e2;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="970" y="360" width="130" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="pr_icon" value="計画された体験&#xa;→ 確実な面白さ" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=15;fillColor=#b8dab0;strokeColor=#82b366;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="410" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 中央: 組み合わせ -->
+        <mxCell id="center_box" value="&lt;b&gt;多くの優れたゲームは&lt;br&gt;両方を組み合わせる&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=15;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="230" width="280" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- 中央の例 -->
+        <mxCell id="center_ex" value="例: Diablo（進行型ストーリー + 創発的戦闘）&#xa;例: GTA（ミッション進行 + オープンワールド創発）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9e6;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="460" y="320" width="280" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 中央から左右への矢印 -->
+        <mxCell id="arrow_left" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" source="center_box" target="emergence_group" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arrow_right" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" source="center_box" target="progression_group" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- スペクトル表示 -->
+        <mxCell id="spectrum_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="530" width="860" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="spectrum_left" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=none;opacity=80;" vertex="1" parent="1">
+          <mxGeometry x="175" y="535" width="425" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="spectrum_right" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=none;opacity=80;" vertex="1" parent="1">
+          <mxGeometry x="600" y="535" width="425" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="spectrum_label_l" value="純粋な創発" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="185" y="545" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="spectrum_label_r" value="純粋な進行" style="text;html=1;align=right;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="910" y="545" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="spectrum_label_c" value="ハイブリッド" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="545" y="545" width="100" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- スペクトル上のゲーム例 -->
+        <mxCell id="sp_chess" value="チェス" style="text;html=1;align=center;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="210" y="600" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="sp_sim" value="SimCity" style="text;html=1;align=center;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="330" y="600" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="sp_diablo" value="Diablo" style="text;html=1;align=center;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="570" y="600" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="sp_zelda" value="ゼルダ" style="text;html=1;align=center;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="770" y="600" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="sp_adv" value="ADV" style="text;html=1;align=center;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="920" y="600" width="60" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- ドット -->
+        <mxCell id="dot1" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" y="558" width="8" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="dot2" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="355" y="558" width="8" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="dot3" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="595" y="558" width="8" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="dot4" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="795" y="558" width="8" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="dot5" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="945" y="558" width="8" height="8" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

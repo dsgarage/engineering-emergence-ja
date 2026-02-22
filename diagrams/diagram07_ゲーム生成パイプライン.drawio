@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram name="ゲーム生成パイプライン" id="diagram07">
+    <mxGraphModel dx="1400" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- タイトル -->
+        <mxCell id="title" value="&lt;b&gt;ゲーム自動生成の変換パイプライン&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="350" y="10" width="700" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="Procedural Content Generation (PCG) Pipeline" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="420" y="45" width="560" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- ステップ1: ミッション生成 -->
+        <mxCell id="step1_box" value="&lt;b style=&quot;font-size:14px&quot;&gt;① ミッション生成&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;shadow=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="180" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="step1_desc" value="基本的なタスクの&lt;br&gt;線形シーケンスを&lt;br&gt;生成する" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="55" y="140" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="step1_method" value="&lt;b&gt;形式文法&lt;/b&gt;&lt;br&gt;(Formal Grammar)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0fa;strokeColor=#6c8ebf;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="55" y="200" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="step1_detail" value="S → a, b, c ..." style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#666666;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="250" width="150" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- 矢印 1→2 -->
+        <mxCell id="arrow12" value="" style="endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=3;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="200" as="sourcePoint"/>
+            <mxPoint x="260" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ステップ2: ロック追加 -->
+        <mxCell id="step2_box" value="&lt;b style=&quot;font-size:14px&quot;&gt;② ロック追加&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;shadow=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="260" y="100" width="180" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="step2_desc" value="ミッショングラフに&lt;br&gt;ロックと鍵の構造を&lt;br&gt;挿入する" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="275" y="140" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="step2_method" value="&lt;b&gt;グラフ文法&lt;/b&gt;&lt;br&gt;(Graph Grammar)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9e6;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="275" y="200" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="step2_detail" value="書き換え規則で&lt;br&gt;グラフを変換" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#666666;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="275" y="245" width="150" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- 矢印 2→3 -->
+        <mxCell id="arrow23" value="" style="endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=3;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="200" as="sourcePoint"/>
+            <mxPoint x="480" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ステップ3: ロック複雑化 -->
+        <mxCell id="step3_box" value="&lt;b style=&quot;font-size:14px&quot;&gt;③ ロック複雑化&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;shadow=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="480" y="100" width="180" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="step3_desc" value="単純なロックを&lt;br&gt;複合条件や多段階&lt;br&gt;ロックに拡張" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="495" y="140" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="step3_method" value="&lt;b&gt;グラフ文法&lt;/b&gt;&lt;br&gt;(Graph Grammar)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9e6;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="495" y="200" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="step3_detail" value="AND/OR条件&lt;br&gt;多重鍵の導入" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#666666;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="495" y="245" width="150" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- 矢印 3→4 -->
+        <mxCell id="arrow34" value="" style="endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=3;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="200" as="sourcePoint"/>
+            <mxPoint x="700" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ステップ4: スペース変換 -->
+        <mxCell id="step4_box" value="&lt;b style=&quot;font-size:14px&quot;&gt;④ スペース変換&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;shadow=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="180" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="step4_desc" value="ミッショングラフを&lt;br&gt;空間構造（部屋と通路）&lt;br&gt;に変換する" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="715" y="140" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="step4_method" value="&lt;b&gt;グラフ文法&lt;/b&gt;&lt;br&gt;(Graph Grammar)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e2;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="715" y="200" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="step4_detail" value="Mission→Space&lt;br&gt;マッピング" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#666666;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="715" y="245" width="150" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- 矢印 4→5 -->
+        <mxCell id="arrow45" value="" style="endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=3;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="200" as="sourcePoint"/>
+            <mxPoint x="920" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ステップ5: スペース拡張 -->
+        <mxCell id="step5_box" value="&lt;b style=&quot;font-size:14px&quot;&gt;⑤ スペース拡張&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;shadow=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="920" y="100" width="180" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="step5_desc" value="抽象的な空間を&lt;br&gt;具体的な2D/3D&lt;br&gt;レベルに展開" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="935" y="140" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="step5_method" value="&lt;b&gt;シェイプ文法&lt;/b&gt;&lt;br&gt;(Shape Grammar)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e2;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="935" y="200" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="step5_detail" value="幾何学的な形状&lt;br&gt;の配置と接続" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#666666;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="935" y="245" width="150" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- 矢印 5→6 -->
+        <mxCell id="arrow56" value="" style="endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=3;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="200" as="sourcePoint"/>
+            <mxPoint x="1140" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ステップ6: メカニクス生成 -->
+        <mxCell id="step6_box" value="&lt;b style=&quot;font-size:14px&quot;&gt;⑥ メカニクス生成&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;shadow=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="100" width="180" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="step6_desc" value="ゲームルールと&lt;br&gt;パラメータを&lt;br&gt;自動生成・調整" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1155" y="140" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="step6_method" value="&lt;b&gt;Machinations&lt;/b&gt;&lt;br&gt;(内部経済設計)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0e6f6;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1155" y="200" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="step6_detail" value="バランス調整&lt;br&gt;シミュレーション" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#666666;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="1155" y="245" width="150" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- 全体の流れラベル -->
+        <mxCell id="flow_label_l" value="&lt;b&gt;抽象的&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#0050aa;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="310" width="80" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="flow_label_r" value="&lt;b&gt;具体的&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="310" width="80" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="flow_arrow" value="" style="endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="322" as="sourcePoint"/>
+            <mxPoint x="1190" y="322" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 入力と出力 -->
+        <mxCell id="input_box" value="&lt;b&gt;入力&lt;/b&gt;&lt;br&gt;デザインパラメータ&lt;br&gt;（難易度、長さ、&lt;br&gt;テーマ等）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="350" width="180" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="input_arrow" value="" style="endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="340" as="sourcePoint"/>
+            <mxPoint x="130" y="300" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="output_box" value="&lt;b&gt;出力&lt;/b&gt;&lt;br&gt;プレイ可能な&lt;br&gt;ゲームレベル" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="350" width="180" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="output_arrow" value="" style="endArrow=block;endFill=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1230" y="340" as="sourcePoint"/>
+            <mxPoint x="1230" y="300" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 使用手法の詳細 -->
+        <mxCell id="method_section" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="470" width="1280" height="490" as="geometry"/>
+        </mxCell>
+        <mxCell id="method_title" value="&lt;b&gt;使用する生成手法の詳細&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="60" y="480" width="300" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- 形式文法 -->
+        <mxCell id="fg_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="520" width="380" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="fg_title" value="&lt;b&gt;形式文法（Formal Grammar）&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontColor=#0050aa;" vertex="1" parent="1">
+          <mxGeometry x="80" y="525" width="340" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="fg_text" value="&lt;b&gt;概要:&lt;/b&gt; 記号の書き換え規則でシーケンスを生成&lt;br&gt;&lt;br&gt;&lt;b&gt;仕組み:&lt;/b&gt;&lt;br&gt;  S → aS | bS | cS | ε&lt;br&gt;  (開始記号から再帰的に展開)&lt;br&gt;&lt;br&gt;&lt;b&gt;用途:&lt;/b&gt; ミッションの線形構造生成&lt;br&gt;&lt;br&gt;&lt;b&gt;利点:&lt;/b&gt; 構造の正しさを文法で保証&lt;br&gt;&lt;b&gt;制約:&lt;/b&gt; 分岐構造の表現に限界あり" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="80" y="555" width="340" height="155" as="geometry"/>
+        </mxCell>
+
+        <!-- グラフ文法 -->
+        <mxCell id="gg_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="470" y="520" width="380" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="gg_title" value="&lt;b&gt;グラフ文法（Graph Grammar）&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontColor=#b8860b;" vertex="1" parent="1">
+          <mxGeometry x="490" y="525" width="340" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="gg_text" value="&lt;b&gt;概要:&lt;/b&gt; グラフの部分構造を書き換えて変換&lt;br&gt;&lt;br&gt;&lt;b&gt;仕組み:&lt;/b&gt;&lt;br&gt;  パターンマッチ → 置換規則を適用&lt;br&gt;  (部分グラフを新しいグラフに置換)&lt;br&gt;&lt;br&gt;&lt;b&gt;用途:&lt;/b&gt; ロック挿入、構造の複雑化、&lt;br&gt;  ミッション→スペースの変換&lt;br&gt;&lt;br&gt;&lt;b&gt;利点:&lt;/b&gt; 非線形構造（分岐・合流）を表現可能&lt;br&gt;&lt;b&gt;制約:&lt;/b&gt; 規則設計が複雑になりやすい" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="490" y="555" width="340" height="155" as="geometry"/>
+        </mxCell>
+
+        <!-- シェイプ文法 -->
+        <mxCell id="sg_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="880" y="520" width="380" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="sg_title" value="&lt;b&gt;シェイプ文法（Shape Grammar）&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontColor=#006600;" vertex="1" parent="1">
+          <mxGeometry x="900" y="525" width="340" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="sg_text" value="&lt;b&gt;概要:&lt;/b&gt; 幾何学的形状の配置規則で空間を生成&lt;br&gt;&lt;br&gt;&lt;b&gt;仕組み:&lt;/b&gt;&lt;br&gt;  初期形状 → 変換規則(回転/拡大/接続)&lt;br&gt;  → 具体的な2D/3Dレイアウト&lt;br&gt;&lt;br&gt;&lt;b&gt;用途:&lt;/b&gt; 部屋の形状生成、通路の配置、&lt;br&gt;  建築的レベルデザイン&lt;br&gt;&lt;br&gt;&lt;b&gt;利点:&lt;/b&gt; 視覚的に自然な空間を生成可能&lt;br&gt;&lt;b&gt;制約:&lt;/b&gt; 3D空間での計算コストが高い" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="900" y="555" width="340" height="155" as="geometry"/>
+        </mxCell>
+
+        <!-- パイプラインの利点 -->
+        <mxCell id="adv_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="740" width="600" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="adv_title" value="&lt;b&gt;パイプラインアプローチの利点&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="745" width="300" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="adv_text" value="&lt;b&gt;1. 関心の分離&lt;/b&gt;&lt;br&gt;  各ステップが独立した変換を担当し、複雑さを管理&lt;br&gt;&lt;br&gt;&lt;b&gt;2. 段階的精緻化&lt;/b&gt;&lt;br&gt;  抽象から具体へ徐々に詳細を追加&lt;br&gt;&lt;br&gt;&lt;b&gt;3. 再利用性&lt;/b&gt;&lt;br&gt;  各ステップの文法規則は独立に変更・拡張可能&lt;br&gt;&lt;br&gt;&lt;b&gt;4. 制御可能性&lt;/b&gt;&lt;br&gt;  各段階でパラメータを調整してバリエーションを制御&lt;br&gt;&lt;br&gt;&lt;b&gt;5. 検証可能性&lt;/b&gt;&lt;br&gt;  各段階の出力を個別に検証し品質を保証" style="text;html=1;align=left;verticalAlign=top;fontSize=12;spacingLeft=15;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="80" y="770" width="560" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- 応用例 -->
+        <mxCell id="app_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="680" y="740" width="580" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="app_title" value="&lt;b&gt;実際の応用例&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="700" y="745" width="200" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="app_text" value="&lt;b&gt;ダンジョン生成&lt;/b&gt;&lt;br&gt;  ミッション（敵→鍵→ボス）→ 空間（部屋→通路→ボス部屋）&lt;br&gt;&lt;br&gt;&lt;b&gt;アドベンチャーゲーム&lt;/b&gt;&lt;br&gt;  ミッション（パズル連鎖）→ 空間（探索エリア）→ メカニクス（ヒント配置）&lt;br&gt;&lt;br&gt;&lt;b&gt;ローグライク&lt;/b&gt;&lt;br&gt;  毎回異なるダンジョンを生成しつつ構造的正しさを保証&lt;br&gt;&lt;br&gt;&lt;b&gt;メトロイドヴァニア&lt;/b&gt;&lt;br&gt;  ロック/鍵構造を中心に探索ルートを自動設計&lt;br&gt;&lt;br&gt;&lt;b&gt;研究動向:&lt;/b&gt; 混合イニシアチブ（人間+AI協調設計）へ発展中" style="text;html=1;align=left;verticalAlign=top;fontSize=12;spacingLeft=15;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="700" y="770" width="540" height="160" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

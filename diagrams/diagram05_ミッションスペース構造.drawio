@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram name="ミッションスペース構造" id="diagram05">
+    <mxGraphModel dx="1400" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- タイトル -->
+        <mxCell id="title" value="&lt;b&gt;Mission/Space 2層構造&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="400" y="10" width="600" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- 上段: ミッショングラフ -->
+        <mxCell id="mission_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="1320" height="350" as="geometry"/>
+        </mxCell>
+        <mxCell id="mission_title" value="&lt;b&gt;ミッショングラフ（Mission Graph）&lt;/b&gt; - タスクの依存関係" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontColor=#0050aa;" vertex="1" parent="1">
+          <mxGeometry x="60" y="65" width="500" height="35" as="geometry"/>
+        </mxCell>
+
+        <!-- ミッションノード -->
+        <mxCell id="m_start" value="&lt;b&gt;開始&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="140" width="80" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m_explore1" value="&lt;b&gt;探索A&lt;/b&gt;&lt;br&gt;森を調査" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="120" width="110" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m_explore2" value="&lt;b&gt;探索B&lt;/b&gt;&lt;br&gt;洞窟を調査" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="200" width="110" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m_key" value="&lt;b&gt;🔑 鍵を入手&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="120" width="120" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m_fight" value="&lt;b&gt;中ボス戦&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="200" width="120" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m_lock" value="&lt;b&gt;🔒 ロック&lt;/b&gt;&lt;br&gt;（鍵が必要）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="155" width="110" height="55" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m_puzzle" value="&lt;b&gt;パズル&lt;/b&gt;&lt;br&gt;謎解き" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="120" width="110" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m_item" value="&lt;b&gt;アイテム取得&lt;/b&gt;&lt;br&gt;武器強化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="200" width="110" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m_boss" value="&lt;b&gt;ボス戦&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="155" width="120" height="55" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m_goal" value="&lt;b&gt;ゴール&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;shadow=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="155" width="80" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- ミッション接続 -->
+        <mxCell id="me1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;" edge="1" source="m_start" target="m_explore1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="me2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;" edge="1" source="m_start" target="m_explore2" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="me3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;" edge="1" source="m_explore1" target="m_key" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="me4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;" edge="1" source="m_explore2" target="m_fight" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="me5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;" edge="1" source="m_key" target="m_lock" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="me6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;" edge="1" source="m_fight" target="m_lock" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="me7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;" edge="1" source="m_lock" target="m_puzzle" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="me8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;" edge="1" source="m_lock" target="m_item" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="me9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;" edge="1" source="m_puzzle" target="m_boss" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="me10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;" edge="1" source="m_item" target="m_boss" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="me11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;" edge="1" source="m_boss" target="m_goal" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ロックと鍵の接続（点線） -->
+        <mxCell id="lock_key_conn" value="解錠" style="endArrow=open;dashed=1;strokeColor=#d6b656;strokeWidth=2;fontSize=11;fontColor=#d6b656;fontStyle=1;" edge="1" source="m_key" target="m_lock" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="145"/>
+              <mxPoint x="550" y="183"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 凡例 -->
+        <mxCell id="legend_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="60" y="290" width="600" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_title" value="&lt;b&gt;凡例&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="290" width="60" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg1t" value="探索/タスク" style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="105" y="317" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="200" y="320" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2t" value="戦闘" style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="225" y="317" width="50" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="290" y="320" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3t" value="鍵" style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="315" y="317" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="360" y="320" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg4t" value="ロック" style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="385" y="317" width="50" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg5" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="450" y="320" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg5t" value="開始/ゴール" style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="475" y="317" width="80" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="leg_note" value="実線矢印 = 依存関係（前提条件）　／　点線矢印 = ロック解除関係" style="text;html=1;align=left;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="350" width="450" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- マッピング関係（点線、上下接続） -->
+        <mxCell id="map_label" value="&lt;b&gt;マッピング関係&lt;/b&gt;（ミッション → スペース）" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="420" width="400" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- 点線接続 -->
+        <mxCell id="map1" value="" style="endArrow=open;dashed=1;strokeColor=#9673a6;strokeWidth=2;dashPattern=4 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="410" as="sourcePoint"/>
+            <mxPoint x="110" y="500" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="map2" value="" style="endArrow=open;dashed=1;strokeColor=#9673a6;strokeWidth=2;dashPattern=4 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="410" as="sourcePoint"/>
+            <mxPoint x="275" y="500" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="map3" value="" style="endArrow=open;dashed=1;strokeColor=#9673a6;strokeWidth=2;dashPattern=4 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="410" as="sourcePoint"/>
+            <mxPoint x="470" y="500" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="map4" value="" style="endArrow=open;dashed=1;strokeColor=#9673a6;strokeWidth=2;dashPattern=4 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="410" as="sourcePoint"/>
+            <mxPoint x="665" y="500" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="map5" value="" style="endArrow=open;dashed=1;strokeColor=#9673a6;strokeWidth=2;dashPattern=4 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="855" y="410" as="sourcePoint"/>
+            <mxPoint x="855" y="500" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="map6" value="" style="endArrow=open;dashed=1;strokeColor=#9673a6;strokeWidth=2;dashPattern=4 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="410" as="sourcePoint"/>
+            <mxPoint x="1050" y="500" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="map7" value="" style="endArrow=open;dashed=1;strokeColor=#9673a6;strokeWidth=2;dashPattern=4 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1230" y="410" as="sourcePoint"/>
+            <mxPoint x="1230" y="500" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 下段: スペースグラフ -->
+        <mxCell id="space_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="40" y="460" width="1320" height="500" as="geometry"/>
+        </mxCell>
+        <mxCell id="space_title" value="&lt;b&gt;スペースグラフ（Space Graph）&lt;/b&gt; - 部屋と通路の構造" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontColor=#006600;" vertex="1" parent="1">
+          <mxGeometry x="60" y="465" width="500" height="35" as="geometry"/>
+        </mxCell>
+
+        <!-- スペースノード（部屋） -->
+        <mxCell id="s_entrance" value="&lt;b&gt;入口&lt;/b&gt;&lt;br&gt;ホール" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="530" width="90" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s_forest" value="&lt;b&gt;森&lt;/b&gt;&lt;br&gt;広い空間" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="510" width="100" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s_cave" value="&lt;b&gt;洞窟&lt;/b&gt;&lt;br&gt;狭い通路" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="600" width="100" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s_treasure" value="&lt;b&gt;宝物庫&lt;/b&gt;&lt;br&gt;（鍵の部屋）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="510" width="110" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s_arena" value="&lt;b&gt;闘技場&lt;/b&gt;&lt;br&gt;（中ボス部屋）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="600" width="110" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- ロックされた扉 -->
+        <mxCell id="s_locked_door" value="🔒" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="555" width="40" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s_temple" value="&lt;b&gt;神殿&lt;/b&gt;&lt;br&gt;パズル部屋" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="510" width="110" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s_armory" value="&lt;b&gt;武器庫&lt;/b&gt;&lt;br&gt;アイテム部屋" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="610" width="110" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s_boss_room" value="&lt;b&gt;ボスの間&lt;/b&gt;&lt;br&gt;大広間" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="930" y="540" width="130" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s_exit" value="&lt;b&gt;出口&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;shadow=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="550" width="80" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- スペース接続（通路） -->
+        <mxCell id="se1" value="通路" style="rounded=1;strokeColor=#82b366;strokeWidth=3;endArrow=none;fontSize=10;fontColor=#82b366;" edge="1" source="s_entrance" target="s_forest" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="se2" value="通路" style="rounded=1;strokeColor=#82b366;strokeWidth=3;endArrow=none;fontSize=10;fontColor=#82b366;" edge="1" source="s_entrance" target="s_cave" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="se3" value="" style="rounded=1;strokeColor=#82b366;strokeWidth=3;endArrow=none;" edge="1" source="s_forest" target="s_treasure" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="se4" value="" style="rounded=1;strokeColor=#82b366;strokeWidth=3;endArrow=none;" edge="1" source="s_cave" target="s_arena" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="se5" value="" style="rounded=1;strokeColor=#82b366;strokeWidth=3;endArrow=none;" edge="1" source="s_treasure" target="s_locked_door" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="se6" value="" style="rounded=1;strokeColor=#82b366;strokeWidth=3;endArrow=none;" edge="1" source="s_arena" target="s_locked_door" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="se7" value="" style="rounded=1;strokeColor=#82b366;strokeWidth=3;endArrow=none;" edge="1" source="s_locked_door" target="s_temple" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="se8" value="" style="rounded=1;strokeColor=#82b366;strokeWidth=3;endArrow=none;" edge="1" source="s_locked_door" target="s_armory" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="se9" value="" style="rounded=1;strokeColor=#82b366;strokeWidth=3;endArrow=none;" edge="1" source="s_temple" target="s_boss_room" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="se10" value="" style="rounded=1;strokeColor=#82b366;strokeWidth=3;endArrow=none;" edge="1" source="s_armory" target="s_boss_room" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="se11" value="" style="rounded=1;strokeColor=#82b366;strokeWidth=3;endArrow=none;" edge="1" source="s_boss_room" target="s_exit" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 説明ボックス -->
+        <mxCell id="desc_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="60" y="700" width="600" height="240" as="geometry"/>
+        </mxCell>
+        <mxCell id="desc_title" value="&lt;b&gt;Mission/Space構造の要点&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="705" width="300" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="desc_text" value="&lt;b&gt;ミッショングラフ（上段）&lt;/b&gt;&lt;br&gt;- プレイヤーが達成すべきタスクの論理的依存関係&lt;br&gt;- 「何をするか」を定義&lt;br&gt;- ロックと鍵がゲートキーピングの役割&lt;br&gt;&lt;br&gt;&lt;b&gt;スペースグラフ（下段）&lt;/b&gt;&lt;br&gt;- ゲーム世界の物理的空間構造&lt;br&gt;- 「どこで行うか」を定義&lt;br&gt;- 部屋と通路のトポロジー&lt;br&gt;&lt;br&gt;&lt;b&gt;マッピング関係（点線）&lt;/b&gt;&lt;br&gt;- ミッションの各タスクを空間上の特定の場所に配置&lt;br&gt;- 同じミッション構造でも異なる空間レイアウトが可能&lt;br&gt;- レベルデザインの自由度を確保" style="text;html=1;align=left;verticalAlign=top;fontSize=12;spacingLeft=15;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="80" y="730" width="560" height="200" as="geometry"/>
+        </mxCell>
+
+        <!-- ロックと鍵の説明 -->
+        <mxCell id="lk_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="700" y="700" width="600" height="240" as="geometry"/>
+        </mxCell>
+        <mxCell id="lk_title" value="&lt;b&gt;ロックと鍵のメカニズム&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="720" y="705" width="300" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="lk_text" value="&lt;b&gt;鍵の種類:&lt;/b&gt;&lt;br&gt;- リテラルキー（鍵アイテム）&lt;br&gt;- スキルの習得（二段ジャンプ等）&lt;br&gt;- 敵の撃破（ボス撃破で扉が開く）&lt;br&gt;- パズルの解決（正しい順序で操作）&lt;br&gt;&lt;br&gt;&lt;b&gt;ロックの効果:&lt;/b&gt;&lt;br&gt;- プレイヤーの進行を制御&lt;br&gt;- 探索の順序に構造を与える&lt;br&gt;- バックトラッキングの動機付け&lt;br&gt;- 「メトロイドヴァニア」式ゲームの核心&lt;br&gt;&lt;br&gt;&lt;b&gt;設計上の利点:&lt;/b&gt;&lt;br&gt;- 難易度の段階的上昇を保証&lt;br&gt;- プレイヤーが適切な装備で挑めるように制御" style="text;html=1;align=left;verticalAlign=top;fontSize=12;spacingLeft=15;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="720" y="730" width="560" height="200" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

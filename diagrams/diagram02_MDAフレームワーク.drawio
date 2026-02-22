@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram name="MDAフレームワーク" id="diagram02">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- タイトル -->
+        <mxCell id="title" value="&lt;b&gt;MDAフレームワーク&lt;/b&gt;&lt;br&gt;Mechanics - Dynamics - Aesthetics" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- デザイナーの視点ラベル -->
+        <mxCell id="designer_label" value="&lt;b&gt;デザイナーの視点&lt;/b&gt;（設計 → 実装）" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#0050aa;" vertex="1" parent="1">
+          <mxGeometry x="350" y="90" width="500" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- デザイナー矢印（左→右） -->
+        <mxCell id="designer_arrow" value="" style="endArrow=block;endFill=1;strokeColor=#0050aa;strokeWidth=3;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="135" as="sourcePoint"/>
+            <mxPoint x="1000" y="135" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 3層のメインボックス -->
+        <!-- メカニクス -->
+        <mxCell id="mech_box" value="&lt;b style=&quot;font-size:16px&quot;&gt;メカニクス&lt;/b&gt;&lt;br&gt;&lt;b&gt;Mechanics&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;shadow=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="300" height="280" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="mech_desc" value="ゲームのルール、データ、&lt;br&gt;アルゴリズム" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0fa;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="110" y="230" width="240" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="mech_detail" value="&lt;b&gt;具体例:&lt;/b&gt;&lt;br&gt;- HPの数値&lt;br&gt;- ダメージ計算式&lt;br&gt;- 移動速度パラメータ&lt;br&gt;- カードの効果テキスト&lt;br&gt;- 勝利条件の定義" style="text;html=1;align=left;verticalAlign=top;fontSize=12;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="110" y="290" width="240" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- ダイナミクス -->
+        <mxCell id="dyn_box" value="&lt;b style=&quot;font-size:16px&quot;&gt;ダイナミクス&lt;/b&gt;&lt;br&gt;&lt;b&gt;Dynamics&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;shadow=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="450" y="160" width="300" height="280" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="dyn_desc" value="プレイ中に生まれる&lt;br&gt;振る舞い・パターン" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9e6;strokeColor=#d6b656;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="480" y="230" width="240" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="dyn_detail" value="&lt;b&gt;具体例:&lt;/b&gt;&lt;br&gt;- 駆け引きや読み合い&lt;br&gt;- 経済のインフレーション&lt;br&gt;- プレイヤー同士の同盟&lt;br&gt;- メタゲームの形成&lt;br&gt;- リスクとリターンの判断" style="text;html=1;align=left;verticalAlign=top;fontSize=12;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="290" width="240" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- エステティクス -->
+        <mxCell id="aes_box" value="&lt;b style=&quot;font-size:16px&quot;&gt;エステティクス&lt;/b&gt;&lt;br&gt;&lt;b&gt;Aesthetics&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;shadow=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="820" y="160" width="300" height="280" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="aes_desc" value="プレイヤーが感じる&lt;br&gt;感情体験・面白さ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e2;strokeColor=#82b366;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="850" y="230" width="240" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="aes_detail" value="&lt;b&gt;8つの美学:&lt;/b&gt;&lt;br&gt;1. 感覚（Sensation）&lt;br&gt;2. 幻想（Fantasy）&lt;br&gt;3. 物語（Narrative）&lt;br&gt;4. 挑戦（Challenge）&lt;br&gt;5. 交友（Fellowship）&lt;br&gt;6. 発見（Discovery）&lt;br&gt;7. 表現（Expression）&lt;br&gt;8. 服従（Submission）" style="text;html=1;align=left;verticalAlign=top;fontSize=12;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="850" y="290" width="240" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- 層間の矢印（メカニクス→ダイナミクス） -->
+        <mxCell id="arrow_md" value="生み出す" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;fontSize=12;fontColor=#333333;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="300" as="sourcePoint"/>
+            <mxPoint x="450" y="300" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 層間の矢印（ダイナミクス→エステティクス） -->
+        <mxCell id="arrow_da" value="もたらす" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;fontSize=12;fontColor=#333333;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="300" as="sourcePoint"/>
+            <mxPoint x="820" y="300" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- プレイヤー矢印（右→左） -->
+        <mxCell id="player_arrow" value="" style="endArrow=block;endFill=1;strokeColor=#cc0000;strokeWidth=3;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="475" as="sourcePoint"/>
+            <mxPoint x="200" y="475" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- プレイヤーの視点ラベル -->
+        <mxCell id="player_label" value="&lt;b&gt;プレイヤーの視点&lt;/b&gt;（体験 → 理解）" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#cc0000;" vertex="1" parent="1">
+          <mxGeometry x="350" y="480" width="500" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- 補足説明 -->
+        <mxCell id="note_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="540" width="1040" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="note_title" value="&lt;b&gt;MDAの要点&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="100" y="545" width="200" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="note_text" value="- デザイナーはメカニクスを直接設計するが、プレイヤーはエステティクス（感情体験）から入る&lt;br&gt;- 同じメカニクスが異なるダイナミクスを生み、異なるエステティクスにつながる場合がある&lt;br&gt;- デザイン上の問題はどの層にあるかを特定することが重要&lt;br&gt;- メカニクスの小さな変更がダイナミクスとエステティクスに大きな影響を与えうる" style="text;html=1;align=left;verticalAlign=top;fontSize=12;spacingLeft=15;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="100" y="575" width="1000" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- デザイナーアイコン -->
+        <mxCell id="designer_icon" value="🎨 デザイナー" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="95" width="110" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- プレイヤーアイコン -->
+        <mxCell id="player_icon" value="🎮 プレイヤー" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="458" width="110" height="45" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

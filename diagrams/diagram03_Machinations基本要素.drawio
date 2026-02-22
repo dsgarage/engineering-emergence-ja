@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram name="Machinations基本要素" id="diagram03">
+    <mxGraphModel dx="1400" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- タイトル -->
+        <mxCell id="title" value="&lt;b&gt;Machinations 基本要素&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="400" y="15" width="600" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- ノード類セクション -->
+        <mxCell id="node_section" value="&lt;b&gt;ノード類（Nodes）&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;verticalAlign=top;spacingTop=5;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="900" height="550" as="geometry"/>
+        </mxCell>
+
+        <!-- プール -->
+        <mxCell id="pool_shape" value="&lt;b&gt;5&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="130" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pool_name" value="&lt;b&gt;プール&lt;/b&gt;&lt;br&gt;Pool" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="100" y="215" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="pool_desc" value="リソースを蓄積する。&lt;br&gt;現在の保持量を表示。&lt;br&gt;例: HP、所持金、弾薬" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0fa;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="70" y="255" width="160" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- ソース -->
+        <mxCell id="source_shape" value="" style="shape=triangle;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;shadow=1;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="330" y="125" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="source_dot" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="363" y="155" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="source_name" value="&lt;b&gt;ソース&lt;/b&gt;&lt;br&gt;Source" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="320" y="215" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="source_desc" value="無限にリソースを生成。&lt;br&gt;外部からの供給源。&lt;br&gt;例: 敵の出現、収入" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e2;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="290" y="255" width="160" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- ドレイン -->
+        <mxCell id="drain_shape" value="" style="shape=triangle;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;shadow=1;direction=north;" vertex="1" parent="1">
+          <mxGeometry x="550" y="125" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="drain_dot" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="583" y="155" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="drain_name" value="&lt;b&gt;ドレイン&lt;/b&gt;&lt;br&gt;Drain" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="540" y="215" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="drain_desc" value="リソースを消費・除去。&lt;br&gt;リソースの出口。&lt;br&gt;例: HP消費、弾薬消費" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4e4;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="510" y="255" width="160" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- コンバーター -->
+        <mxCell id="conv_shape" value="" style="shape=triangle;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;shadow=1;direction=east;" vertex="1" parent="1">
+          <mxGeometry x="110" y="360" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="conv_name" value="&lt;b&gt;コンバーター&lt;/b&gt;&lt;br&gt;Converter" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="90" y="445" width="120" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="conv_desc" value="リソースAをリソースBに変換。&lt;br&gt;入力を消費し出力を生成。&lt;br&gt;例: 木材→家具、鉄鉱石→鉄" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9e6;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="485" width="180" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- ゲート -->
+        <mxCell id="gate_shape" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="360" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="gate_name" value="&lt;b&gt;ゲート&lt;/b&gt;&lt;br&gt;Gate" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="330" y="445" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="gate_desc" value="条件に基づきリソースの&lt;br&gt;流れを分岐。確率的/&lt;br&gt;決定的分岐が可能。&lt;br&gt;例: 確率ドロップ、分岐判定" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0e6f6;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="290" y="485" width="180" height="65" as="geometry"/>
+        </mxCell>
+
+        <!-- トレーダー -->
+        <mxCell id="trader_shape" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;shadow=1;fixedSize=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="540" y="370" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="trader_label" value="↔" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="560" y="375" width="60" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="trader_name" value="&lt;b&gt;トレーダー&lt;/b&gt;&lt;br&gt;Trader" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="540" y="445" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="trader_desc" value="2つのリソースを交換。&lt;br&gt;双方向の変換を行う。&lt;br&gt;例: 市場でのアイテム売買" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff0e0;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="500" y="485" width="180" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- レジスター（追加要素） -->
+        <mxCell id="reg_shape" value="&lt;b&gt;10&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="130" width="80" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="reg_name" value="&lt;b&gt;レジスター&lt;/b&gt;&lt;br&gt;Register" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="760" y="200" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="reg_desc" value="数値を保持・計算する。&lt;br&gt;リソースではなく状態値。&lt;br&gt;例: スコア、レベル" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="730" y="240" width="160" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- 接続類セクション -->
+        <mxCell id="conn_section" value="&lt;b&gt;接続類（Connections）&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;verticalAlign=top;spacingTop=5;align=center;" vertex="1" parent="1">
+          <mxGeometry x="980" y="70" width="380" height="550" as="geometry"/>
+        </mxCell>
+
+        <!-- リソース接続 -->
+        <mxCell id="rc_label" value="&lt;b&gt;リソース接続&lt;/b&gt;&lt;br&gt;Resource Connection" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="110" width="260" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rc_from" value="A" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="160" width="50" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="rc_to" value="B" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="160" width="50" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="rc_arrow" value="&lt;b&gt;1&lt;/b&gt;" style="endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=2;fontSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1095" y="185" as="sourcePoint"/>
+            <mxPoint x="1248" y="185" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rc_desc" value="&lt;b&gt;実線矢印&lt;/b&gt;&lt;br&gt;リソースの流れを表す。&lt;br&gt;ラベルは1回あたりの移動量。&lt;br&gt;プールからプールへリソースが&lt;br&gt;移動する経路を示す。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0fa;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="225" width="260" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- 状態接続 -->
+        <mxCell id="sc_label" value="&lt;b&gt;状態接続&lt;/b&gt;&lt;br&gt;State Connection" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="325" width="260" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="sc_from" value="A" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="375" width="50" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="sc_to" value="B" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="375" width="50" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="sc_arrow" value="*0.5" style="endArrow=block;endFill=1;strokeColor=#82b366;strokeWidth=2;dashed=1;dashPattern=8 4;fontSize=12;fontColor=#82b366;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1095" y="400" as="sourcePoint"/>
+            <mxPoint x="1248" y="400" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sc_desc" value="&lt;b&gt;点線矢印&lt;/b&gt;&lt;br&gt;状態に基づく修正を表す。&lt;br&gt;リソースの量が他のノードの&lt;br&gt;振る舞いに影響を与える。&lt;br&gt;ラベルは修正式（倍率など）。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e2;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="440" width="260" height="85" as="geometry"/>
+        </mxCell>
+
+        <!-- 活性化モード -->
+        <mxCell id="act_label" value="&lt;b&gt;活性化モード&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="535" width="260" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="act_desc" value="&lt;b&gt;自動(*)&lt;/b&gt;: 毎ターン自動実行&lt;br&gt;&lt;b&gt;対話的(i)&lt;/b&gt;: プレイヤー操作で実行&lt;br&gt;&lt;b&gt;受動的(p)&lt;/b&gt;: 入力を受けた時に実行" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="565" width="260" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 使用例 -->
+        <mxCell id="example_label" value="&lt;b&gt;使用例: シンプルな経済モデル&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="150" y="640" width="300" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- 例のノード -->
+        <mxCell id="ex_source" value="" style="shape=triangle;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="100" y="690" width="50" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ex_source_l" value="収入源" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="85" y="745" width="80" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ex_pool1" value="&lt;b&gt;50&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="250" y="690" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ex_pool1_l" value="所持金" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="245" y="755" width="70" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ex_conv" value="" style="shape=triangle;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;direction=east;" vertex="1" parent="1">
+          <mxGeometry x="400" y="695" width="50" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ex_conv_l" value="購入" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="400" y="750" width="50" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ex_pool2" value="&lt;b&gt;0&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="540" y="690" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ex_pool2_l" value="アイテム" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="535" y="755" width="70" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- 例の接続 -->
+        <mxCell id="ex_e1" value="10" style="endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=2;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="152" y="715" as="sourcePoint"/>
+            <mxPoint x="248" y="715" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ex_e2" value="20" style="endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=2;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="312" y="720" as="sourcePoint"/>
+            <mxPoint x="398" y="720" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ex_e3" value="1" style="endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=2;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="452" y="720" as="sourcePoint"/>
+            <mxPoint x="538" y="720" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
