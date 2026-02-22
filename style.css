@@ -1,0 +1,43 @@
+@page {
+    size: A4;
+    margin: 2.5cm;
+}
+body {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    font-size: 11pt;
+    line-height: 1.8;
+    color: #333;
+}
+h1 {
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    font-size: 20pt;
+    margin-top: 2em;
+    page-break-before: always;
+}
+h1:first-of-type {
+    page-break-before: avoid;
+}
+h2 {
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    font-size: 16pt;
+    margin-top: 1.5em;
+}
+h3 {
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    font-size: 13pt;
+}
+blockquote {
+    border-left: 3px solid #ccc;
+    padding-left: 1em;
+    margin-left: 0;
+    color: #555;
+    font-style: italic;
+}
+hr {
+    border: none;
+    border-top: 1px solid #999;
+    margin: 2em 0;
+}
+p {
+    text-align: justify;
+}
