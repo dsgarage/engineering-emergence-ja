@@ -1,0 +1,110 @@
+{
+  "Lecture01": {
+    "title": "導入とルール",
+    "slides": [1, 8],
+    "slide_list": [
+      "Slide001_表紙",
+      "Slide002_全体構成",
+      "Slide003_ゲームデザイン理論の必要性",
+      "Slide004_エマージェンスとプログレッション",
+      "Slide005_2つのフレームワーク概要",
+      "Slide006_ゲームの定義",
+      "Slide007_ルールの形式的表現",
+      "Slide008_第1回まとめ"
+    ]
+  },
+  "Lecture02": {
+    "title": "ゲームデザイン理論",
+    "slides": [9, 15],
+    "slide_list": [
+      "Slide009_MDAフレームワーク",
+      "Slide010_フォーマルデザインツール",
+      "Slide011_ゲームデザインパターン",
+      "Slide012_4つの経済機能",
+      "Slide013_フィードバック構造",
+      "Slide014_その他の理論家",
+      "Slide015_第2回まとめ"
+    ]
+  },
+  "Lecture03": {
+    "title": "Machinations",
+    "slides": [16, 23],
+    "slide_list": [
+      "Slide016_Machinationsとは",
+      "Slide017_基本要素ノードの種類",
+      "Slide018_接続の種類",
+      "Slide019_アクティベーションとプルプッシュ",
+      "Slide020_ゲートとランダム性",
+      "Slide021_フィードバック分析",
+      "Slide022_フィードバックプロファイル7特性",
+      "Slide023_SimWarの例"
+    ]
+  },
+  "Lecture04": {
+    "title": "ミッションスペース",
+    "slides": [24, 30],
+    "slide_list": [
+      "Slide024_MissionSpaceとは",
+      "Slide025_ミッショングラフ",
+      "Slide026_スペースグラフ",
+      "Slide027_ロックと鍵",
+      "Slide028_森の神殿の分析",
+      "Slide029_コンストラクション手法",
+      "Slide030_ミッションスペースの形態分析"
+    ]
+  },
+  "Lecture05": {
+    "title": "プログレッションとエマージェンス",
+    "slides": [31, 37],
+    "slide_list": [
+      "Slide031_エマージェンスとプログレッションの融合",
+      "Slide032_おもちゃ遊び場ゲーム",
+      "Slide033_学習曲線の設計",
+      "Slide034_ロックと鍵のMachinations表現",
+      "Slide035_プログレスをリソースとして扱う",
+      "Slide036_動的フリクションとエスカレーション",
+      "Slide037_第5回まとめ"
+    ]
+  },
+  "Lecture06": {
+    "title": "プロトタイピング実践",
+    "slides": [38, 44],
+    "slide_list": [
+      "Slide038_プロトタイピングの重要性",
+      "Slide039_Machinationsシミュレーション",
+      "Slide040_Ludoscopeレベル設計",
+      "Slide041_プロトタイプの種類",
+      "Slide042_デザインパターン実践",
+      "Slide043_パターンの組み合わせ",
+      "Slide044_ワークショップ演習"
+    ]
+  },
+  "Lecture07": {
+    "title": "ゲーム生成",
+    "slides": [45, 52],
+    "slide_list": [
+      "Slide045_モデル駆動工学とゲームデザイン",
+      "Slide046_形式文法とチョムスキー階層",
+      "Slide047_グラフ文法シェイプ文法",
+      "Slide048_書き換えシステムの性質",
+      "Slide049_プロシージャルコンテンツ生成",
+      "Slide050_適応型ゲーム",
+      "Slide051_Ludoscopeツール",
+      "Slide052_第6回まとめ"
+    ]
+  },
+  "Lecture08": {
+    "title": "結論とデザインパターン",
+    "slides": [53, 60],
+    "slide_list": [
+      "Slide053_結論と検証",
+      "Slide054_Machinationsデザインパターン一覧",
+      "Slide055_エンジン系パターン",
+      "Slide056_フリクション系パターン",
+      "Slide057_エスカレーションとその他のパターン",
+      "Slide058_ゼルダ風レベル自動生成",
+      "Slide059_ゼルダ風レベル生成の後半ステップ",
+      "Slide060_全体まとめ"
+    ]
+  }
+}

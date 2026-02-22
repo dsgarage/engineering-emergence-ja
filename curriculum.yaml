@@ -1,0 +1,113 @@
+title: "エマージェンスの工学：ゲームデザインの応用理論"
+title_en: "Engineering Emergence: Applied Theory for Game Design"
+author: "Joris Dormans"
+year: 2012
+license: "CC BY-NC 3.0 NL"
+isbn: "978-94-6190-752-3"
+institution: "University of Amsterdam"
+num_lectures: 8
+theme: dark
+
+source:
+  pdf: "../Engineering_emergence:applied_theory_for_game_design.pdf"
+  translation_dir: "translation/"
+  md_dir: "lectures/"
+  slides_dir: "slides/"
+  diagrams_dir: "diagrams/"
+  images_dir: "images/"
+
+lectures:
+  - id: "Lecture01"
+    title: "導入とルール"
+    slides: [1, 8]
+    source_chapters: [1]
+    topics:
+      - ゲームの定義
+      - メカニクスの分類（物理系 vs 経済系）
+      - エマージェンスとプログレッション
+      - セルオートマトンとフィードバック
+
+  - id: "Lecture02"
+    title: "ゲームデザイン理論"
+    slides: [9, 15]
+    source_chapters: [2, 3]
+    topics:
+      - MDAフレームワーク
+      - フォーマルデザインツール
+      - ゲームデザインパターン
+      - ゲーム経済の4機能
+      - フィードバック構造
+
+  - id: "Lecture03"
+    title: "Machinations"
+    slides: [16, 23]
+    source_chapters: [4]
+    topics:
+      - Machinationsビジュアル言語
+      - ノードの種類（プール、ゲート、ソース、ドレイン等）
+      - 接続の種類（フロー、状態、トリガー等）
+      - アクティベーションモード
+      - フィードバックプロファイル
+
+  - id: "Lecture04"
+    title: "ミッションスペース"
+    slides: [24, 30]
+    source_chapters: [5]
+    topics:
+      - MissionSpaceフレームワーク
+      - ミッショングラフ
+      - スペースグラフ
+      - ロックと鍵のメカニクス
+      - ゼルダ森の神殿の分析
+
+  - id: "Lecture05"
+    title: "プログレッションとエマージェンス"
+    slides: [31, 37]
+    source_chapters: [6]
+    topics:
+      - 2つのゲーム類型の融合
+      - おもちゃ→遊び場→ゲーム
+      - 学習曲線の設計
+      - 動的フリクション
+      - エスカレーティング・コンプリケーション
+
+  - id: "Lecture06"
+    title: "プロトタイピング実践"
+    slides: [38, 44]
+    source_chapters: [7]
+    topics:
+      - プロトタイピングの重要性
+      - Machinationsシミュレーション
+      - Ludoscopeレベル設計
+      - デザインパターンの実践的適用
+      - ワークショップ演習
+
+  - id: "Lecture07"
+    title: "ゲーム生成"
+    slides: [45, 52]
+    source_chapters: [8]
+    topics:
+      - モデル駆動工学
+      - 形式文法とチョムスキー階層
+      - グラフ文法・シェイプ文法
+      - プロシージャルコンテンツ生成
+      - 適応型ゲーム
+      - Ludoscopeツール
+
+  - id: "Lecture08"
+    title: "結論とデザインパターン"
+    slides: [53, 60]
+    source_chapters: [9, 10]
+    topics:
+      - 研究の結論と検証
+      - Machinationsデザインパターン一覧
+      - エンジン系パターン
+      - フリクション系パターン
+      - エスカレーション系パターン
+      - ゼルダ風レベル自動生成
+
+output:
+  slide_mapping: "slide_mapping.json"
+  formats:
+    - md
+    - pdf
