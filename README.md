@@ -25,7 +25,9 @@ ISBN: 978-94-6190-752-3
 │   └── GameDesign_Textbook_Full（統合版テキスト）
 ├── slides/               # スライド原稿（テキスト形式）
 ├── diagrams/             # draw.io ダイアグラム
-└── images/               # 図版素材
+├── images/               # 図版素材
+└── reference/            # 参考文献の読書記録
+    └── game_mechanics_design/  # 『ゲームメカニクスのデザイン』第1〜4章
 ```
 
 ## 翻訳範囲
@@ -46,3 +48,12 @@ ISBN: 978-94-6190-752-3
 | 6 | プロトタイピング実践 | 紙プロトタイプ、デジタルプロトタイプ |
 | 7 | ゲーム生成 | 手続き的生成、文法ベース生成 |
 | 8 | 結論とデザインパターン | 総括、応用パターン集 |
+
+## 参考文献
+
+### ゲームメカニクスのデザイン（第1〜4章）
+
+Ernest Adams & Joris Dormans 共著『A Game Designer's Guide to Game Mechanics』（邦題：ゲームメカニクスのデザイン）の第1〜4章をOCRで書き起こした読書記録。Engineering Emergence の著者 Dormans による商業向けゲームデザインの実践書であり、本論文の理論的基盤が実務にどう応用されるかを理解するための補助資料。
+
+- `reference/game_mechanics_design/GameMechanics_Ch1-4_Japanese.md` — Markdown版（挿絵18枚付き）
+- `reference/game_mechanics_design/GameMechanics_Ch1-4_Japanese.pdf` — PDF版
