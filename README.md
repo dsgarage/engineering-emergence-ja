@@ -1,59 +1,74 @@
 # Engineering Emergence - ゲームデザインのための応用理論
 
-Joris Dormans著「Engineering Emergence: Applied Theory for Game Design」（アムステルダム大学博士論文, 2012年）に基づく日本語翻訳・講義資料集。
+Joris Dormans著「Engineering Emergence: Applied Theory for Game Design」（アムステルダム大学博士論文, 2012年）と、同著者の商業書「ゲームメカニクスのデザイン」（Adams & Dormans共著）に基づく日本語翻訳・講義資料集。
 
-原著ライセンス: Creative Commons Attribution-NonCommercial 3.0 Netherlands (CC BY-NC 3.0 NL)
+## プロジェクトの目的
 
-ISBN: 978-94-6190-752-3
+2つのソース資料を統合し、以下の教育目標を達成するカリキュラムを構築する：
+
+> **「なぜメカニクスが必要か？ ルールとゲーム内経済は別であり、ルールに則ってゲーム内経済を動かしていくというプレイ体験がゲームなのだ」**
+
+- **論文**が「なぜ（WHY）」を、**商業書**が「どうやって（HOW）」を提供する
+- カリキュラムでは各テーマで「なぜ → どうやって → 実際にやってみる」の流れを構成
 
 ## ディレクトリ構成
 
 ```
-├── translation/          # 原著 第1〜3章の日本語直訳
-│   ├── Engineering_Emergence_Ch1-3_Japanese.md
-│   ├── Engineering_Emergence_Ch1-3_Japanese.pdf
-│   └── style.css
-├── lectures/             # 全8回講義資料（Markdown + PDF）
-│   ├── Lecture01_導入とルール
-│   ├── Lecture02_ゲームデザイン理論
-│   ├── Lecture03_Machinations
-│   ├── Lecture04_ミッションスペース
-│   ├── Lecture05_プログレッションとエマージェンス
-│   ├── Lecture06_プロトタイピング実践
-│   ├── Lecture07_ゲーム生成
-│   ├── Lecture08_結論とデザインパターン
-│   └── GameDesign_Textbook_Full（統合版テキスト）
-├── slides/               # スライド原稿（テキスト形式）
-├── diagrams/             # draw.io ダイアグラム
-├── images/               # 図版素材
-└── reference/            # 参考文献の読書記録
-    └── game_mechanics_design/  # 『ゲームメカニクスのデザイン』第1〜4章
+├── sources/                    # 原典資料（明確に分離）
+│   ├── thesis/                 # Engineering Emergence 博士論文
+│   │   ├── translation/        #   第1〜3章の日本語直訳（Markdown + PDF）
+│   │   └── images/             #   図版素材
+│   └── textbook/               # ゲームメカニクスのデザイン 商業書
+│       └── game_mechanics_design/  第1〜4章のOCR書き起こし（Markdown + PDF + 挿絵）
+├── curriculum/                 # カリキュラム資料
+│   ├── analysis/               #   差分分析ドキュメント
+│   ├── lectures/               #   全8回講義資料（Markdown + PDF）
+│   ├── slides/                 #   スライド原稿（テキスト形式）
+│   ├── diagrams/               #   draw.io ダイアグラム
+│   ├── curriculum.yaml         #   カリキュラム定義ファイル
+│   └── slide_mapping.json      #   スライドマッピング
+└── README.md
 ```
 
-## 翻訳範囲
+## ソース資料
 
-- 第1章: イントロダクション（ゲームの定義、メカニクス、創発とプログレッション）
-- 第2章: ルール、表現、リアリズム（イコニック・インデクシカル・シンボリックなシミュレーション）
-- 第3章: ゲームデザイン理論（MDA、デザインパターン、ペトリネット、Machinations）
+### 論文：Engineering Emergence（第1〜3章）
 
-## 講義構成（全8回）
+原著ライセンス: Creative Commons Attribution-NonCommercial 3.0 Netherlands (CC BY-NC 3.0 NL)
+ISBN: 978-94-6190-752-3
 
-| 回 | テーマ | 内容 |
+| 章 | テーマ | 主な内容 |
 |---|---|---|
-| 1 | 導入とルール | ゲームの定義、メカニクスの分類 |
-| 2 | ゲームデザイン理論 | MDA、デザインパターン、ボキャブラリー |
-| 3 | Machinations | ビジュアル言語、ノードと接続 |
-| 4 | ミッションスペース | レベルデザイン、ミッション構造 |
-| 5 | プログレッションとエマージェンス | 二つのゲーム類型と統合 |
-| 6 | プロトタイピング実践 | 紙プロトタイプ、デジタルプロトタイプ |
-| 7 | ゲーム生成 | 手続き的生成、文法ベース生成 |
-| 8 | 結論とデザインパターン | 総括、応用パターン集 |
+| 1 | イントロダクション | ゲームの定義、メカニクス5分類、創発とプログレッション |
+| 2 | ルール、表現、リアリズム | 記号論（アイコン・インデックス・シンボル）、様式化 |
+| 3 | ゲームデザイン理論 | MDA、デザインパターン、ペトリネット、Machinations導入 |
 
-## 参考文献
+### 商業書：ゲームメカニクスのデザイン（第1〜4章）
 
-### ゲームメカニクスのデザイン（第1〜4章）
+Ernest Adams & Joris Dormans 共著『A Game Designer's Guide to Game Mechanics』のOCR書き起こし。
 
-Ernest Adams & Joris Dormans 共著『A Game Designer's Guide to Game Mechanics』（邦題：ゲームメカニクスのデザイン）の第1〜4章をOCRで書き起こした読書記録。Engineering Emergence の著者 Dormans による商業向けゲームデザインの実践書であり、本論文の理論的基盤が実務にどう応用されるかを理解するための補助資料。
+| 章 | テーマ | 主な内容 |
+|---|---|---|
+| 1 | ゲームメカニクスのデザイン | 5種メカニクス、3段階デザインプロセス、プロトタイピング |
+| 2 | 創発型と進行型 | 確率空間、複雑度バリア、StarCraft/ゼルダ分析 |
+| 3 | 複雑系と創発型の構造 | フィードバックループ、秩序-混沌スペクトラム |
+| 4 | 内部経済 | ソース・ドレイン・コンバータ・トレーダー、バランス調整 |
 
-- `reference/game_mechanics_design/GameMechanics_Ch1-4_Japanese.md` — Markdown版（挿絵18枚付き）
-- `reference/game_mechanics_design/GameMechanics_Ch1-4_Japanese.pdf` — PDF版
+## 差分分析
+
+2つのソースの詳細な差分分析は [`curriculum/analysis/diff_thesis_textbook.md`](curriculum/analysis/diff_thesis_textbook.md) を参照。
+
+**要約**：論文は「なぜルールが重要か」「なぜ経済メカニクスか」「なぜ創発をデザインするか」の理論的基盤を提供し、商業書は「ルールをどう実装するか」「4要素でどう設計するか」「フィードバックでどう制御するか」の実践的手法を提供する。
+
+## カリキュラム構成（全8回・改訂版）
+
+| 回 | テーマ | 主ソース | 内容 |
+|----|--------|---------|------|
+| 1 | ゲームとは何か | 論文Ch1 + 商業書Ch1 | ゲームの定義、ルールの本質（制約＋アフォーダンス） |
+| 2 | メカニクスの分類 | 論文Ch1 + 商業書Ch1 | 5種分類、物理vs経済、連続vs離散 |
+| 3 | ルールと表現 | 論文Ch2 | 記号論、様式化、「少ないほど多い」 |
+| 4 | 創発とプログレッション | 論文Ch1 + 商業書Ch2 | 双極軸、確率空間、複雑度バリア |
+| 5 | 複雑系とフィードバック | 論文Ch1 + 商業書Ch3 | 正/負フィードバック、秩序と混沌のスペクトラム |
+| 6 | 内部経済の設計 | 商業書Ch4 | ソース・ドレイン・コンバータ・トレーダー |
+| 7 | 経済のバランスと形 | 商業書Ch4 | フィードバック効果、長期投資vs短期ゲイン |
+| 8 | デザインツールと実践 | 論文Ch3 + 商業書Ch1 | MDA、Machinations導入、プロトタイピング |
